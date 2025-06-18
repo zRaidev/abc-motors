@@ -4,10 +4,12 @@ import Vehiculos from "./pages/Vehiculos";
 import Reserva from "./pages/Reserva";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar /> {}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/vehiculos" element={<Vehiculos />} />
@@ -19,4 +21,6 @@ function App() {
   );
 }
 
+
 export default App;
+
