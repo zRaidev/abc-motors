@@ -1,9 +1,15 @@
 import Layout from "../components/Layout";
 import vehiculos from "../data/vehiculos";
+import { useNavigate } from "react-router-dom";
+
 
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
+    <Layout>
+      
     <div className="bg-gray-900 min-h-screen text-gray-100 font-montserrat px-6 py-12">
       {/* Encabezado principal */}
       <header className="text-center mb-12">
@@ -55,12 +61,14 @@ function Home() {
       {/* Llamado a la acción */}
       <section className="text-center">
         <h3 className="text-xl font-bold mb-2">¿Listo para reservar?</h3>
-        <button className="bg-rose-600 hover:bg-rose-700 text-white py-2 px-6 rounded-lg transition duration-300">
+        <button className="bg-rose-600 hover:bg-rose-700 text-white py-2 px-6 rounded-lg transition duration-300"
+        onClick={() => navigate("/reserva")}>
           Reserva ahora
         </button>
       </section>
     </div>
 
+    </Layout>
     
   );
 }

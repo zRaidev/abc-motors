@@ -5,6 +5,10 @@ import Reserva from "./pages/Reserva";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
+import GuiaDiseno from "./pages/GuiaDiseno";
+import Gracias from "./pages/Gracias";
+import Login from "./pages/Login";
+import Registro from "./pages/Registro";
 
 function App() {
   return (
@@ -12,10 +16,14 @@ function App() {
       <Navbar /> {}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="/vehiculos" element={<Vehiculos />} />
         <Route path="/reserva" element={<Reserva />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/guia-smnk" element={<GuiaDiseno />} />
+        <Route path="/gracias" element={<Gracias />} />
       </Routes>
     </Router>
   );
