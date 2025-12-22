@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import PropTypes from 'prop-types';
 import Footer from "./Footer";
 import ScrollToTopButton from "./ScrollToTopButton";
 
@@ -20,6 +21,10 @@ function Layout({ children }) {
     </div>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;
 

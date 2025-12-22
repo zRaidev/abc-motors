@@ -30,23 +30,29 @@ function Reserva() {
 
 
   const formRef = useRef();
-  const [form, setForm] = useState({
-    nombre: "",
-    email: "",
-    vehiculo: "",
-    fechaInicio: "",
-    fechaFin: "",
-    pago: "",
+  const [form, setForm] = useState(() => {
+    if (location.state?.vehiculo) {
+      return {
+        nombre: "",
+        email: "",
+        vehiculo: location.state.vehiculo,
+        fechaInicio: "",
+        fechaFin: "",
+        pago: "",
+      };
+    }
+    return {
+      nombre: "",
+      email: "",
+      vehiculo: "",
+      fechaInicio: "",
+      fechaFin: "",
+      pago: "",
+    };
   });
 
-   useEffect(() => {
-    if (location.state?.vehiculo) {
-      setForm((prev) => ({
-        ...prev,
-        vehiculo: location.state.vehiculo,
-      }));
-    }
-
+  useEffect(() => {
+    // Any additional effects after form initialization can go here
   }, [location]);
   const vehiculosDisponibles = vehiculosData.filter(
     (v) => v.estado === "Disponible"
