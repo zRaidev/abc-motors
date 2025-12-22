@@ -10,15 +10,15 @@ function Footer() {
         
         {/* Izquierda: Nombre o lema */}
         <div className="text-center md:text-left">
-          <p>&copy; {new Date().getFullYear()} SMNK Motors. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} ABC Motors. Todos los derechos reservados.</p>
         </div>
 
         {/* Derecha: Redes sociales */}
         <div className="flex gap-4 text-xl justify-center">
-          <a href="https://www.facebook.com/smnk_motors" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition transform hover:scale-110 duration-300" title="Facebook">
+          <a href="https://www.facebook.com/ABC_motors" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition transform hover:scale-110 duration-300" title="Facebook">
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/smnk_motors" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition transform hover:scale-110 duration-300" title="Instagram">
+          <a href="https://www.instagram.com/ABC_motors" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition transform hover:scale-110 duration-300" title="Instagram">
             <FaInstagram />
           </a>
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition transform hover:scale-110 duration-300" title="WhatsApp">

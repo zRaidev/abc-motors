@@ -22,7 +22,7 @@ function App() {
         <Route path="/reserva" element={<Reserva />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/guia-smnk" element={<GuiaDiseno />} />
+        <Route path="/guia-abc" element={<GuiaDiseno />} />
         <Route path="/gracias" element={<Gracias />} />
       </Routes>
     </Router>

@@ -5,7 +5,7 @@ function GuiaDiseno() {
   return (
     <Layout>
       <div className="max-w-5xl mx-auto py-8 px-4">
-        <h1 className="text-4xl font-bold text-rose-600 mb-6 text-center">Guía de Diseño - SMNK Motors</h1>
+        <h1 className="text-4xl font-bold text-rose-600 mb-6 text-center">Guía de Diseño - ABC Motors</h1>
 
         {/* Paleta de colores */}
         <section className="mb-10">

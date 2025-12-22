@@ -11,7 +11,7 @@ function Navbar() {
         {/* Logo + navegación */}
         <div className="flex items-center gap-28">
           <h1 className="text-3xl font-bold font-montserrat">
-            <Link to="/">SMNK Motors</Link>
+            <Link to="/">ABC Motors</Link>
           </h1>
           <ul className="hidden md:flex space-x-6 text-lg font-medium items-center">
             <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Home size={16} /><Link to="/">Inicio</Link></li>

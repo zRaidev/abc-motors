@@ -35,7 +35,7 @@ function Nosotros() {
       >
         <h2 className="text-2xl font-semibold text-white mb-2">¿Quiénes somos?</h2>
         <p className="text-gray-400">
-          En <span className="text-white font-semibold">SMNK Motors</span>, somos una empresa comprometida con brindar soluciones de movilidad confiables, modernas y accesibles. Nacimos con el propósito de revolucionar la experiencia de alquiler de vehículos en Colombia.
+          En <span className="text-white font-semibold">ABC Motors</span>, somos una empresa comprometida con brindar soluciones de movilidad confiables, modernas y accesibles. Nacimos con el propósito de revolucionar la experiencia de alquiler de vehículos en Colombia.
         </p>
       </motion.section>
 

@@ -70,7 +70,7 @@ function Reserva() {
 
     emailjs
       .sendForm(
-        "SMNK-MOTORS",     //  SERVICE ID 
+        "ABC-MOTORS",     //  SERVICE ID 
         "template_k5r2kzp",    // TEMPLATE ID 
         formRef.current,
         "hQqICL102n23fi9Sr"      // PUBLIC KEY 

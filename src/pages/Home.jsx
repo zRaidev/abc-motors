@@ -13,7 +13,7 @@ function Home() {
     <div className="bg-gray-900 min-h-screen text-gray-100 font-montserrat px-6 py-12">
       {/* Encabezado principal */}
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-rose-600">Bienvenido a SMNK Motors</h1>
+        <h1 className="text-4xl font-extrabold text-rose-600">Bienvenido a ABC Motors</h1>
         <p className="mt-4 text-gray-400 text-lg">
           Alquila vehículos de lujo, cómodos y seguros con solo un clic.
         </p>
@@ -37,7 +37,7 @@ function Home() {
 </section>
 
     <section className="my-16 px-4 md:px-8">
-      <h2 className="text-2xl text-white font-bold mb-6 text-center">¿Por qué elegir SMNK Motors?</h2>
+      <h2 className="text-2xl text-white font-bold mb-6 text-center">¿Por qué elegir ABC Motors?</h2>
       <div className="grid md:grid-cols-3 gap-6 text-gray-300">
         <div className="bg-gray-800 rounded-lg p-6 shadow-lg text-center">
           <span className="text-4xl text-rose-500">🚗</span>
