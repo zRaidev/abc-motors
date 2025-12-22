@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist', // Optional: keeps the same build folder name as CRA
-  }
+  },
   test: {
     globals: true,
     environment: 'jsdom',
