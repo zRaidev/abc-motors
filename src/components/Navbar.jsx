@@ -22,22 +22,6 @@ function Navbar() {
           </ul>
         </div>
 
-        {/* Botones login/registro en escritorio */}
-        <div className="hidden md:flex space-x-4">
-          <Link
-            to="/login"
-            className="bg-transparent border border-rose-600 text-rose-500 px-4 py-1 rounded hover:bg-rose-600 hover:text-white transition"
-          >
-            Iniciar Sesión
-          </Link>
-          <Link
-            to="/registro"
-            className="bg-rose-600 px-4 py-1 rounded text-white hover:bg-rose-700 transition"
-          >
-            Registrarse
-          </Link>
-        </div>
-
         {/* Botón hamburguesa en móvil */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-xl">
@@ -54,24 +38,6 @@ function Navbar() {
           <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><CalendarCheck size={16} /><Link to="/reserva" onClick={() => setIsOpen(false)}>Reserva</Link></li>
           <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Users size={16} /><Link to="/nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link></li>
           <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Phone size={16} /><Link to="/contacto" onClick={() => setIsOpen(false)}>Contacto</Link></li>
-          <li>
-            <Link
-              to="/login"
-              onClick={() => setIsOpen(false)}
-              className="block w-full text-center border border-rose-500 text-rose-500 py-2 rounded hover:bg-rose-600 hover:text-white transition"
-            >
-              Iniciar Sesión
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/registro"
-              onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-rose-600 text-white py-2 rounded hover:bg-rose-700 transition"
-            >
-              Registrarse
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
