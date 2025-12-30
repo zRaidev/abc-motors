@@ -5,7 +5,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 
-function Reserva() {
+function ContactarAgente() {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -68,7 +68,7 @@ function Reserva() {
   return (
     <Layout>
       <h1 className="text-3xl font-bold text-rose-600 mb-8 text-center">
-        Solicita tu Cotización
+        Contacta a uno de nuestros agentes
       </h1>
 
       <form
@@ -149,4 +149,4 @@ function Reserva() {
   );
 }
 
-export default Reserva;
+export default ContactarAgente;
