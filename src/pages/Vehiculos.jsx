@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import vehiculosData from "../data/vehiculos";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Vehiculos() {
   const navigate = useNavigate();
@@ -47,12 +47,16 @@ function Vehiculos() {
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 px-2">
         {vehiculosFiltrados.map((auto, i) => (
           <div key={i} className="bg-gray-800 rounded-xl shadow-lg p-4 text-white">
-            <img
-              src={auto.imagen}
-              alt={auto.nombre}
-              className="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 className="text-xl font-semibold">{auto.nombre}</h3>
+            <Link to={`/vehiculo/${auto.id}`}>
+              <img
+                src={auto.imagen}
+                alt={auto.nombre}
+                className="w-full h-48 object-cover rounded mb-4 hover:opacity-90 transition duration-300 cursor-pointer"
+              />
+            </Link>
+            <Link to={`/vehiculo/${auto.id}`} className="hover:text-rose-400 transition duration-200">
+              <h3 className="text-xl font-semibold">{auto.nombre}</h3>
+            </Link>
             <p className="text-rose-400 font-bold mt-2">{auto.precio}</p>
 
             {/* Estado del vehículo */}
@@ -67,18 +71,28 @@ function Vehiculos() {
             {/* Categoría */}
             <p className="text-gray-400 text-sm italic">{auto.categoria}</p>
 
-            {/* Botón Contactar agente (deshabilitado si no está disponible) */}
-            <button
-              disabled={auto.estado !== "Disponible"}
-              onClick={() => handleContactar(auto.nombre)}
-              className={`mt-4 py-2 px-4 rounded w-full transition duration-300 ${
-                auto.estado === "Disponible"
-                  ? "bg-rose-600 hover:bg-rose-700 text-white"
-                  : "bg-gray-500 cursor-not-allowed text-gray-300"
-              }`}
-            >
-              {auto.estado === "Disponible" ? "Contactar un agente" : "No disponible"}
-            </button>
+            <div className="flex gap-2 mt-4">
+              {/* Botón Ver detalles */}
+              <Link
+                to={`/vehiculo/${auto.id}`}
+                className="flex-1 py-2 px-4 rounded bg-gray-700 hover:bg-gray-600 text-white text-center transition duration-300"
+              >
+                Ver detalles
+              </Link>
+
+              {/* Botón Contactar agente (deshabilitado si no está disponible) */}
+              <button
+                disabled={auto.estado !== "Disponible"}
+                onClick={() => handleContactar(auto.nombre)}
+                className={`flex-1 py-2 px-4 rounded transition duration-300 ${
+                  auto.estado === "Disponible"
+                    ? "bg-rose-600 hover:bg-rose-700 text-white"
+                    : "bg-gray-500 cursor-not-allowed text-gray-300"
+                }`}
+              >
+                {auto.estado === "Disponible" ? "Contactar" : "No disponible"}
+              </button>
+            </div>
 
           </div>
         ))}
