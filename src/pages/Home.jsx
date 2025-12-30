@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import vehiculos from "../data/vehiculos";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -24,13 +24,13 @@ function Home() {
         <div className="grid md:grid-cols-3 gap-6">
         {/* Muestra solo 3 autos de ejemplo */}
         {vehiculos.slice(0, 3).map((auto, i) => (
-        <div key={i} className="bg-gray-800 rounded-lg p-4 shadow-lg">
-        <img src={auto.imagen} alt={auto.nombre} className="w-full h-40 object-cover rounded" />
-        <h3 className="text-white text-lg font-semibold mt-4">{auto.nombre}</h3>
-        <p className="text-gray-400">{auto.precio}</p>
+        <Link to={`/vehiculo/${auto.id}`} key={i} className="bg-gray-800 rounded-lg p-4 shadow-lg">
+          <img src={auto.imagen} alt={auto.nombre} className="w-full h-40 object-cover rounded" />
+          <h3 className="text-white text-lg font-semibold mt-4">{auto.nombre}</h3>
+          <p className="text-gray-400">{auto.precio}</p>
+        </Link>
+        ))}
       </div>
-    ))}
-  </div>
   <div className="text-center mt-6">
     <a href="/vehiculos" className="text-rose-500 hover:underline font-semibold">Ver todos los vehículos →</a>
   </div>
@@ -62,7 +62,7 @@ function Home() {
       <section className="text-center">
         <h3 className="text-xl font-bold mb-2">¿Listo para cotizar?</h3>
         <button className="bg-rose-600 hover:bg-rose-700 text-white py-2 px-6 rounded-lg transition duration-300"
-        onClick={() => navigate("/reserva")}>
+        onClick={() => navigate("/cotizar")}>
           Cotiza ahora
         </button>
       </section>
