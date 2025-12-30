@@ -8,6 +8,7 @@ import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
 import GuiaDiseno from "./pages/GuiaDiseno";
 import SolicitudEnviada from "./pages/SolicitudEnviada";
+import Cotizar from "./pages/cotizar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/vehiculos" element={<Vehiculos />} />
         <Route path="/vehiculo/:id" element={<VehiculoDetalle />} />
         <Route path="/contactar-agente" element={<ContactarAgente />} />
+        <Route path="/cotizar" element={<Cotizar />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/guia-abc" element={<GuiaDiseno />} />
