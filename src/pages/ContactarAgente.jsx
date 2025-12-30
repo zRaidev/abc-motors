@@ -53,7 +53,7 @@ function ContactarAgente() {
       )
       .then(() => {
         e.target.reset();
-        navigate("/gracias", {
+        navigate("/solicitud-enviada", {
           state: {
             ...form
           }
