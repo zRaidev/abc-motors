@@ -6,39 +6,43 @@ import vehiculosData from "../data/vehiculos";
 
 function Gracias() {
   const location = useLocation();
-  const reserva = location.state;
-  const vehiculoInfo = vehiculosData.find(v => v.nombre === reserva?.vehiculo);
+  const solicitud = location.state;
+  const vehiculoInfo = vehiculosData.find(v => v.nombre === solicitud?.vehiculo);
 
 
   return (
     <Layout>
       <div className="max-w-xl mx-auto bg-gray-800 rounded-xl p-8 shadow-lg mt-10 text-white">
         <h1 className="text-3xl font-bold text-rose-600 mb-4 text-center">
-          ¡Reserva confirmada! 🎉
+          ¡Solicitud enviada! 🎉
         </h1>
 
-        {reserva ? (
+        {solicitud ? (
           <>
-            <p className="mb-2"><strong>Nombre:</strong> {reserva.nombre}</p>
-            <p className="mb-2"><strong>Email:</strong> {reserva.email}</p>
-            <p className="mb-2"><strong>Vehículo:</strong> {reserva.vehiculo}{vehiculoInfo?.imagen && (
-            <div className="flex justify-center mb-4">
+            <p className="mb-2"><strong>Nombre:</strong> {solicitud.nombre}</p>
+            <p className="mb-2"><strong>Email:</strong> {solicitud.email}</p>
+            <p className="mb-2"><strong>Teléfono:</strong> {solicitud.telefono}</p>
+            <p className="mb-2"><strong>Vehículo de interés:</strong> {solicitud.vehiculo}</p>
+            {vehiculoInfo?.imagen && (
+            <div className="flex justify-center my-4">
               <img
                 src={vehiculoInfo.imagen}
                 alt={vehiculoInfo.nombre}
                 className="h-40 object-contain rounded shadow"
               />
             </div>
-          )}</p>
-            <p className="mb-2"><strong>Fecha de inicio:</strong> {reserva.fechaInicio}</p>
-            <p className="mb-2"><strong>Fecha de fin:</strong> {reserva.fechaFin}</p>
-            <p className="mb-2"><strong>Método de pago:</strong> {reserva.pago}</p>
-            <p className="mt-4 text-lg font-semibold text-rose-400">
-              Total por {reserva.dias} día(s): ${reserva.precioTotal?.toLocaleString()}
+          )}
+            {vehiculoInfo?.precio && (
+              <p className="mt-4 text-lg font-semibold text-rose-400">
+                Precio de referencia: {vehiculoInfo.precio}
+              </p>
+            )}
+            <p className="mt-4 text-gray-300 text-sm">
+              Un agente se pondrá en contacto contigo pronto para brindarte una cotización personalizada y responder tus preguntas.
             </p>
           </>
         ) : (
-          <p>No se encontró información de la reserva.</p>
+          <p>No se encontró información de la solicitud.</p>
         )}
 
         <div className="mt-6 text-center">

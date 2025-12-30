@@ -68,7 +68,7 @@ function Reserva() {
   return (
     <Layout>
       <h1 className="text-3xl font-bold text-rose-600 mb-8 text-center">
-        Reserva tu Vehículo
+        Solicita tu Cotización
       </h1>
 
       <form
@@ -142,7 +142,7 @@ function Reserva() {
           type="submit"
           className="w-full bg-rose-600 hover:bg-rose-700 py-2 px-4 rounded text-white font-semibold transition duration-300"
         >
-          Confirmar reserva
+          Enviar solicitud
         </button>
       </form>
     </Layout>

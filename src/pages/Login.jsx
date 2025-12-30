@@ -10,7 +10,7 @@ function Login() {
     e.preventDefault();
     // Simula login (luego puedes conectar con Firebase u otro backend)
     if (form.email && form.password) {
-      navigate("/reserva"); // o al dashboard si lo haces después
+      navigate("/reserva"); // redirige a la página de compra
     }
   };
 

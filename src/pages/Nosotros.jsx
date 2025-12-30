@@ -35,7 +35,7 @@ function Nosotros() {
       >
         <h2 className="text-2xl font-semibold text-white mb-2">¿Quiénes somos?</h2>
         <p className="text-gray-400">
-          En <span className="text-white font-semibold">ABC Motors</span>, somos una empresa comprometida con brindar soluciones de movilidad confiables, modernas y accesibles. Nacimos con el propósito de revolucionar la experiencia de alquiler de vehículos en Colombia.
+          En <span className="text-white font-semibold">ABC Motors</span>, somos una empresa comprometida con brindar soluciones de movilidad confiables, modernas y accesibles. Conectamos a nuestros clientes con los vehículos perfectos a través de nuestros agentes especializados.
         </p>
       </motion.section>
 
@@ -50,7 +50,7 @@ function Nosotros() {
         >
           <h2 className="text-2xl font-semibold text-white mb-2">Misión</h2>
           <p className="text-gray-400">
-            Ofrecer soluciones de movilidad eficientes y confiables, priorizando la experiencia del cliente y asegurando vehículos en óptimas condiciones, con atención personalizada.
+            Ofrecer asesoría personalizada en la búsqueda del vehículo ideal, priorizando la experiencia del cliente con información transparente, cotizaciones justas y atención profesional.
           </p>
         </motion.section>
 
@@ -63,7 +63,7 @@ function Nosotros() {
         >
           <h2 className="text-2xl font-semibold text-white mb-2">Visión</h2>
           <p className="text-gray-400">
-            Ser la empresa de alquiler de vehículos más confiable y moderna en Latinoamérica, liderando por innovación, excelencia y compromiso con nuestros usuarios.
+            Ser la plataforma líder de asesoría automotriz más confiable en Latinoamérica, destacando por innovación, transparencia y compromiso con nuestros clientes.
           </p>
         </motion.section>
       </div>

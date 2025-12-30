@@ -15,7 +15,7 @@ function Home() {
       <header className="text-center mb-12">
         <h1 className="text-4xl font-extrabold text-rose-600">Bienvenido a ABC Motors</h1>
         <p className="mt-4 text-gray-400 text-lg">
-          Alquila vehículos de lujo, cómodos y seguros con solo un clic.
+          Explora vehículos de lujo, cómodos y seguros. Cotiza con nuestros agentes.
         </p>
       </header>
 
@@ -52,7 +52,7 @@ function Home() {
         <div className="bg-gray-800 rounded-lg p-6 shadow-lg text-center">
           <span className="text-4xl text-rose-500">💰</span>
           <h3 className="font-bold text-lg mt-2">Precios Justos</h3>
-          <p>Transparencia y comodidad en cada reserva.</p>
+          <p>Transparencia y comodidad en cada cotización.</p>
         </div>
       </div>
     </section>
@@ -60,10 +60,10 @@ function Home() {
 
       {/* Llamado a la acción */}
       <section className="text-center">
-        <h3 className="text-xl font-bold mb-2">¿Listo para reservar?</h3>
+        <h3 className="text-xl font-bold mb-2">¿Listo para cotizar?</h3>
         <button className="bg-rose-600 hover:bg-rose-700 text-white py-2 px-6 rounded-lg transition duration-300"
         onClick={() => navigate("/reserva")}>
-          Reserva ahora
+          Cotiza ahora
         </button>
       </section>
     </div>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Vehiculos() {
   const navigate = useNavigate();
-  const handleReservar = (vehiculoNombre) => {
+  const handleContactar = (vehiculoNombre) => {
   navigate("/reserva", { state: { vehiculo: vehiculoNombre } });
 };
   const [busqueda, setBusqueda] = useState("");
@@ -67,17 +67,17 @@ function Vehiculos() {
             {/* Categoría */}
             <p className="text-gray-400 text-sm italic">{auto.categoria}</p>
 
-            {/* Botón Reservar (deshabilitado si no está disponible) */}
+            {/* Botón Contactar agente (deshabilitado si no está disponible) */}
             <button
               disabled={auto.estado !== "Disponible"}
-              onClick={() => handleReservar(auto.nombre)}
+              onClick={() => handleContactar(auto.nombre)}
               className={`mt-4 py-2 px-4 rounded w-full transition duration-300 ${
                 auto.estado === "Disponible"
                   ? "bg-rose-600 hover:bg-rose-700 text-white"
                   : "bg-gray-500 cursor-not-allowed text-gray-300"
               }`}
             >
-              {auto.estado === "Disponible" ? "Reservar" : "No disponible"}
+              {auto.estado === "Disponible" ? "Contactar un agente" : "No disponible"}
             </button>
 
           </div>
