@@ -72,10 +72,10 @@ function Reserva() {
 
     emailjs
       .sendForm(
-        "ABC-MOTORS",     //  SERVICE ID 
-        "service_si06wvn",    // TEMPLATE ID 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_RESERVA,
         formRef.current,
-        "hQqICL102n23fi9Sr"      // PUBLIC KEY 
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         e.target.reset();
