@@ -4,7 +4,7 @@ import { useLocation, Link } from "react-router-dom";
 import vehiculosData from "../data/vehiculos";
 
 
-function Gracias() {
+function SolicitudEnviada() {
   const location = useLocation();
   const solicitud = location.state;
   const vehiculoInfo = vehiculosData.find(v => v.nombre === solicitud?.vehiculo);
@@ -58,4 +58,4 @@ function Gracias() {
   );
 }
 
-export default Gracias;
+export default SolicitudEnviada;

@@ -6,7 +6,7 @@ import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
 import GuiaDiseno from "./pages/GuiaDiseno";
-import Gracias from "./pages/Gracias";
+import SolicitudEnviada from "./pages/SolicitudEnviada";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/guia-abc" element={<GuiaDiseno />} />
-        <Route path="/gracias" element={<Gracias />} />
+        <Route path="/solicitud-enviada" element={<SolicitudEnviada />} />
       </Routes>
     </Router>
   );
