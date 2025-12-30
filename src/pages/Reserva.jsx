@@ -35,6 +35,7 @@ function Reserva() {
       return {
         nombre: "",
         email: "",
+        telefono: "",
         vehiculo: location.state.vehiculo,
         fechaInicio: "",
         fechaFin: "",
@@ -44,6 +45,7 @@ function Reserva() {
     return {
       nombre: "",
       email: "",
+      telefono: "",
       vehiculo: "",
       fechaInicio: "",
       fechaFin: "",
@@ -71,7 +73,7 @@ function Reserva() {
     emailjs
       .sendForm(
         "ABC-MOTORS",     //  SERVICE ID 
-        "template_k5r2kzp",    // TEMPLATE ID 
+        "service_si06wvn",    // TEMPLATE ID 
         formRef.current,
         "hQqICL102n23fi9Sr"      // PUBLIC KEY 
       )
@@ -126,6 +128,21 @@ function Reserva() {
             value={form.email}
             onChange={handleChange}
             required
+            className="w-full px-4 py-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-rose-600"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm text-gray-300 mb-1">
+            Teléfono
+          </label>
+          <input
+            type="tel"
+            name="telefono"
+            value={form.telefono}
+            onChange={handleChange}
+            required
+            placeholder="+507 6123-4567"
             className="w-full px-4 py-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-rose-600"
           />
         </div>
