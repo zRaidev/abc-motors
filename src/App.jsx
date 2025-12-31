@@ -8,7 +8,7 @@ import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
 import GuiaDiseno from "./pages/GuiaDiseno";
 import SolicitudEnviada from "./pages/SolicitudEnviada";
-import Cotizar from "./pages/cotizar";
+import Cotizar from "./pages/Cotizar";
 
 function App() {
   return (
