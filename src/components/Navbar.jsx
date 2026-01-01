@@ -16,7 +16,7 @@ function Navbar() {
           <ul className="hidden md:flex space-x-6 text-lg font-medium items-center">
             <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Home size={16} /><Link to="/">Inicio</Link></li>
             <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Car size={16} /><Link to="/vehiculos">Vehículos</Link></li>
-            <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><CalendarCheck size={16} /><Link to="/reserva">Reserva</Link></li>
+          <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><CalendarCheck size={16} /><Link to="/cotizar">Cotiza</Link></li>
             <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Users size={16} /><Link to="/nosotros">Nosotros</Link></li>
             <li className="flex items-center gap-1 hover:text-pink-500 transition duration-200"><Phone size={16} /><Link to="/contacto">Contacto</Link></li>
           </ul>
