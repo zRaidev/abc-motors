@@ -1,4 +1,4 @@
-# SMNK Motors (Vite + React)
+# ABC Motors (Vite + React)
 
 This project uses [Vite](https://vitejs.dev/) as the build tool and [React](https://react.dev/) for the UI framework.
 
@@ -24,20 +24,21 @@ npm install
 ## Project Structure
 
 ```
-smnk-motors/
+abc-motors/
 ├── src/
-│   ├── components/      # React components (Navbar, Footer, etc.)
-│   ├── pages/           # Page components (Home, Vehiculos, Reserva, etc.)
+│   ├── components/      # React components (Navbar, Footer, Layout, ScrollToTopButton)
+│   ├── pages/           # Page components (Home, Vehiculos, Cotizar, ContactarAgente, etc.)
 │   ├── data/            # Static data (vehiculos.js)
 │   ├── App.jsx          # Root component
 │   ├── index.jsx        # React entry point
 │   ├── index.css        # Global styles
 │   └── App.css          # App-specific styles
-├── public/              # Static assets
+├── public/              # Static assets (manifest.json, robots.txt)
 ├── index.html           # HTML template
 ├── vite.config.js       # Vite configuration
 ├── eslint.config.js     # ESLint configuration
-└── tailwind.config.js   # Tailwind CSS configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+└── vercel.json          # Vercel deployment configuration
 ```
 
 ## Technologies Used
@@ -51,6 +52,8 @@ smnk-motors/
 - **EmailJS** - Email service integration
 - **Framer Motion** - Animation library
 - **Lucide React** - Icon library
+- **React Icons** - Additional icon library
+- **Headless UI** - Unstyled accessible UI components
 
 ## Development
 
